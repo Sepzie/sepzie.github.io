@@ -1,0 +1,59 @@
+diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/components/Seo/index.tsx b/node_modules/gatsby-theme-portfolio-minimal/src/components/Seo/index.tsx
+index b087cef..cf3b7c2 100644
+--- a/node_modules/gatsby-theme-portfolio-minimal/src/components/Seo/index.tsx
++++ b/node_modules/gatsby-theme-portfolio-minimal/src/components/Seo/index.tsx
+@@ -13,7 +13,7 @@ interface SeoProps {
+ export function Seo(props: SeoProps): React.ReactElement {
+     const location = useLocation();
+     const siteMetadata = { ...useSiteMetadata(), ...props };
+-
++    debugger
+     const thumbnailUrl = siteMetadata.thumbnail
+         ? (siteMetadata.siteUrl + siteMetadata.thumbnail.childImageSharp.original.src).replace(/([^:]\/)\/+/g, '$1')
+         : undefined;
+diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/configuration.ts b/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/configuration.ts
+index 8bdbc6e..f8f23bd 100644
+--- a/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/configuration.ts
++++ b/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/configuration.ts
+@@ -1,4 +1,5 @@
+ export const socialProfileLabels = {
++    about: "About",
+     behance: 'Behance',
+     github: 'GitHub',
+     medium: 'Medium',
+diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/index.tsx b/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/index.tsx
+index 5c38fd4..c34032d 100644
+--- a/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/index.tsx
++++ b/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/index.tsx
+@@ -6,6 +6,7 @@ import { socialProfileLabels } from './configuration';
+ import * as classes from './style.module.css';
+ 
+ export enum SocialProfile {
++    About = "about",
+     Behance = 'behance',
+     GitHub = 'github',
+     Medium = 'medium',
+@@ -38,7 +39,10 @@ export function SocialProfiles(props: SocialProfilesProps): React.ReactElement {
+ 
+     // Enrich the social profile with data from the display name configuration file
+     // as well as the site metadata from settings.json
++    // console.log(props.from)
++    debugger
+     const shownProfiles = props.from.map((profile) => {
++        console.log("TEST")
+         const normalizedProfileId = profile.toLowerCase() as SocialProfile;
+         if (Object.values(SocialProfile).includes(normalizedProfileId)) {
+             return {
+diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/sections/Interests/index.tsx b/node_modules/gatsby-theme-portfolio-minimal/src/sections/Interests/index.tsx
+index 7a34fd5..191dfc6 100644
+--- a/node_modules/gatsby-theme-portfolio-minimal/src/sections/Interests/index.tsx
++++ b/node_modules/gatsby-theme-portfolio-minimal/src/sections/Interests/index.tsx
+@@ -33,7 +33,7 @@ export function InterestsSection(props: PageSection): React.ReactElement {
+                                         className={classes.Icon}
+                                         alt={interest.image.alt || `Interest ${interest.label}`}
+                                     />
+-                                )}{' '}
++                                )}{' TEST'}
+                                 {interest.label}
+                             </Animation>
+                         );

@@ -1,59 +1,122 @@
 {
   "interests": [
     {
-      "label": "Quick and Easy Setup",
+      "label": "Python",
       "image": {
-        "src": "../../images/joystick.png",
+        "src": "../../images/python.png",
+        "alt": "Python"
+      }
+    },
+    {
+      "label": "Java",
+      "image": {
+        "src": "../../images/java.png",
+        "alt": "Java"
+      }
+    },
+    {
+      "label": "Kotlin",
+      "image": {
+        "src": "../../images/kotlin.png",
+        "alt": "Kotlin"
+      }
+    },
+    {
+      "label": "C",
+      "image": {
+        "src": "../../images/c.png",
+        "alt": "c"
+      }
+    },
+    {
+      "label": "JavaScript",
+      "image": {
+        "src": "../../images/js.png",
+        "alt": "JavaScript"
+      }
+    },
+    {
+      "label": "React",
+      "image": {
+        "src": "../../images/react.png",
+        "alt": "React"
+      }
+    },
+    {
+      "label": "PostgreSQL",
+      "image": {
+        "src": "../../images/postgresql.png",
         "alt": ""
       }
     },
     {
-      "label": "Content via Markdown",
+      "label": "Android",
       "image": {
-        "src": "../../images/notebook.png",
-        "alt": ""
+        "src": "../../images/android.png",
+        "alt": "Android"
       }
     },
     {
-      "label": "Responsive Design",
+      "label": "REST API",
       "image": {
-        "src": "../../images/nail-polish.png",
-        "alt": ""
+        "src": "../../images/cloud.png",
+        "alt": "REST API"
       }
     },
     {
-      "label": "Medium Integration",
+      "label": "Firmware (PSoC 6 MCU)",
       "image": {
-        "src": "../../images/medium.png",
-        "alt": ""
+        "src": "../../images/firmware.png",
+        "alt": "Firmware"
       }
     },
     {
-      "label": "Animations",
+      "label": "Bluetooth LE",
       "image": {
-        "src": "../../images/gem-stone.png",
-        "alt": ""
+        "src": "../../images/bluetooth.png",
+        "alt": "Bluetooth"
       }
     },
     {
-      "label": "PWA (Offline Support)",
+      "label": "R",
       "image": {
-        "src": "../../images/mobile-phone.png",
-        "alt": ""
+        "src": "../../images/R.png",
+        "alt": "R"
       }
     },
     {
-      "label": "Modern Tech-Stack",
+      "label": "Docker",
       "image": {
-        "src": "../../images/gatsby.png",
-        "alt": ""
+        "src": "../../images/docker.webp",
+        "alt": "Docker"
       }
     },
     {
-      "label": "Blazing Fast",
+      "label": "Django",
       "image": {
-        "src": "../../images/high-voltage.png",
-        "alt": ""
+        "src": "../../images/django.png",
+        "alt": "Django"
+      }
+    },
+    {
+      "label": "Flask",
+      "image": {
+        "src": "../../images/flask.png",
+        "alt": "Flask"
+      }
+    },
+    {
+      "label": "Fast API",
+      "image": {
+        "src": "../../images/fastapi.webp",
+        "alt": "Fast API"
+      }
+    },
+    {
+      "label": "Git",
+      "image": {
+        "src": "../../images/git.png",
+        "alt": "Git"
       }
     }
   ],

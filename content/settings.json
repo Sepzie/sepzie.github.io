@@ -1,38 +1,37 @@
 {
   "siteMetadata": {
     "language": "en",
-    "siteUrl": "https://gatsby-starter-portfolio-minimal-theme.netlify.app/",
-    "title": "Gatsby Starter for Portfolio Minimal",
-    "titleTemplate": "%s · Portfolio Minimal",
-    "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
-    "author": "Konstantin Münster",
-    "avatar": "../content/images/gatsby.png",
-    "bio": "This biography will be used in the footer area of an article and can contain some more details about the author.",
+    "siteUrl": "https://sepzie.github.io/",
+    "title": "Sepehr ZR",
+    "titleTemplate": "%s · Portfolio",
+    "description": "Sepehr Zohoori Rad’s Personal Portfolio",
+    "author": "Sepehr Zohoori Rad",
+    "avatar": "../content/images/favicon.png",
+    "bio": "Sepehr Zohoori Rad is a motivated software developer with a strong interest in technology and finding creative solutions to real-world problems.",
     "social": {
-      "behance": "https://behance.com",
-      "github": "https://github.com/konstantinmuenster",
-      "medium": "https://konstantinmuenster.medium.com",
-      "linkedin": "https://www.linkedin.com/in/konstantin-muenster/",
-      "mail": "mailto:mail@konstantin.digital"
+      "behance": "",
+      "github": "https://github.com/sepzie",
+      "medium": "",
+      "linkedin": "https://www.linkedin.com/in/sepehr-zohoori-rad/",
+      "mail": "mailto:zohooris1@gmail.com"
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "Portfolio" },
+    "logo": { "text": "Sepehr Z. Rad" },
     "navigation": {
       "header": [
-        { "label": "About", "url": "/#about" },
-        { "label": "Blog", "url": "/blog" },
-        { "label": "Features", "url": "/#features" },
-        { "label": "Github", "url": "/#github" }
+        { "label": "About Me", "url": "/#about" },
+        { "label": "Skills", "url": "/#skills" },
+        { "label": "Projects", "url": "/#projects" }
       ],
       "ctaButton": {
-        "openNewTab": true,
         "label": "Resume",
-        "url": "/resume.pdf"
+        "url": "./resume.pdf"
       },
       "footer": [
-        { "label": "Privacy", "url": "/privacy" },
-        { "label": "Imprint", "url": "/imprint" }
+        { "label": "Created with Gatsby", "url": "https://www.gatsbyjs.com/" },
+        { "label": "Built upon repository by Konstantin Münster", "url": "https://konstantin.digital/" }
+        
       ]
     },
     "featureToggles": {

@@ -2,19 +2,19 @@
   "projects": [
     {
       "visible": true,
-      "category": "🕹️ EASY AND QUICK SETUP",
-      "title": "Add content and deploy!",
-      "description": "Get up and running within minutes. Just install the starter, add your content, deploy it, and there you go! This starter works seamlessly with hosts like Netlify. Photo by Clément H on Unsplash.",
-      "tags": ["Content Integration", "Ready-2-Deploy"],
+      "category": "PERSONAL PROJECT",
+      "title": "Sing With Me",
+      "description": "SingWithMe is a dynamic front-end React application designed to enhance the learning experience for aspiring vocalists. With its innovative approach, users can effortlessly break down complex songs into manageable segments, allowing them to perfect their skills one step at a time. The app combines the power of listening, recording, and self-evaluation to bring users closer to their singing aspirations. This project showcases my ability to bring cutting-edge technology to the world of music and education",
+      "tags": ["React", "Front-end development", "Learning app"],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
-        "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "src": "../../images/singwithme.png",
+        "alt": "Sing With Me Screenshot",
+        "linkTo": "https://github.com/Sepzie/sing-with-me-react/"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "url": "https://github.com/Sepzie/sing-with-me-react/"
         },
         {
           "type": "external",
@@ -24,18 +24,77 @@
     },
     {
       "visible": true,
-      "category": "🧰 EXTENDABLE LAYOUT",
-      "title": "Add more sections!",
-      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
-      "tags": ["Custom Sections", "Easy-2-Use"],
+      "category": "HACKATHON",
+      "title": "Trip Monitoring Dashboard",
+      "description": "Developed a full-stack trip monitoring dashboard for a mining company as part of a 6-person team during a QDS hackathon. Analyzed big data and presented conclusions and predictions in an easy-to-use web interface. Implemented a REST API using Flask and Python and utilized Google Maps API to create a heatmap of truck locations. A data-driven solution for real-time trip monitoring.",
+      "tags": ["Full-Stack Development", "REST API", "React", "Flask", "Google Maps API", "Data Analysis", "Team Project"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
-        "alt": "Extendable Layout"
+        "src": "../../images/tripmonitor.png",
+        "alt": "Trip Monitoring Dashboard Screenshot",
+        "linkTo": "https://github.com/Sepzie/EnviLabs-Hackathon/"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "url": "https://github.com/christietsang/EnviLabs-Hackathon/"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "HACKATHON",
+      "title": "Outliner Discord Bot",
+      "description": "Outliner is a discord bot that answers questions from BCIT course outlines using OpenAI answer API. BCIT students are known to have immense workloads and may not always have time to manually check course outlines. To solve this problem, our team built Outliner to help students be better informed while saving time.",
+      "tags": ["Python", "OpenAI API", "Web Scraping", "Team Project"],
+      "image": {
+        "src": "../../images/outliner.jpg",
+        "alt": "Trip Monitoring Dashboard Screenshot",
+        "linkTo": "https://github.com/Sepzie/EnviLabs-Hackathon/"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/christietsang/EnviLabs-Hackathon/"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "COURSE PROJECT",
+      "title": "Virtual Learning Buddy",
+      "description": "Virtual Learning Buddy (VLB) is a web-based application prototype designed to enhance the online learning experience. The goal of VLB is to provide students with a comprehensive and interactive learning environment that helps them to stay focused and minimize distractions. The application brings together key elements of an effective learning setup in a single platform, making it an ideal tool for students looking to improve their study habits and productivity. VLB is the result of a group project by students of a computer science program, and it showcases their technical skills and expertise in web development.",
+      "tags": ["HTML", "CSS", "JavaScript", "Bootsrap", "Firebase", "Team Project"],
+      "image": {
+        "src": "../../images/vlb.png",
+        "alt": "Virtual Learning Buddy Screenshot",
+        "linkTo": "https://github.com/Sepzie/1800_DTC04"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/Sepzie/1800_DTC04/"
+        },
+        {
+          "type": "external",
+          "url": "https://dtc04-5a24d.web.app/"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "COURSE PROJECT",
+      "title": "Arena of Blood",
+      "description": "Virtual Learning Buddy (VLB) is a web-based application prototype designed to enhance the online learning experience. The goal of VLB is to provide students with a comprehensive and interactive learning environment that helps them to stay focused and minimize distractions. The application brings together key elements of an effective learning setup in a single platform, making it an ideal tool for students looking to improve their study habits and productivity. VLB is the result of a group project by students of a computer science program, and it showcases their technical skills and expertise in web development.",
+      "tags": ["Python", "Unit Testing", "Documentaiton", "Text Based ", "Firebase", "Individual Project", "Text Based RPG"],
+      "image": {
+        "src": "../../images/arenaofblood.png",
+        "alt": "Arena of Blood Screenshot",
+        "linkTo": "https://github.com/Sepzie/ArenaOfBlood/"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/Sepzie/ArenaOfBlood/"
         }
       ]
     }
