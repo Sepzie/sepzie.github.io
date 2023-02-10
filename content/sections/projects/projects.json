@@ -15,10 +15,6 @@
         {
           "type": "github",
           "url": "https://github.com/Sepzie/sing-with-me-react/"
-        },
-        {
-          "type": "external",
-          "url": "https://www.gatsbyjs.org/docs/mdx/writing-pages/"
         }
       ]
     },
@@ -31,7 +27,7 @@
       "image": {
         "src": "../../images/tripmonitor.png",
         "alt": "Trip Monitoring Dashboard Screenshot",
-        "linkTo": "https://github.com/Sepzie/EnviLabs-Hackathon/"
+        "linkTo": "https://github.com/christietsang/EnviLabs-Hackathon/"
       },
       "links": [
         {
@@ -49,12 +45,12 @@
       "image": {
         "src": "../../images/outliner.jpg",
         "alt": "Trip Monitoring Dashboard Screenshot",
-        "linkTo": "https://github.com/Sepzie/EnviLabs-Hackathon/"
+        "linkTo": "https://github.com/christietsang/OutlinerBot/"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/christietsang/EnviLabs-Hackathon/"
+          "url": "https://github.com/christietsang/OutlinerBot/"
         }
       ]
     },
@@ -73,10 +69,6 @@
         {
           "type": "github",
           "url": "https://github.com/Sepzie/1800_DTC04/"
-        },
-        {
-          "type": "external",
-          "url": "https://dtc04-5a24d.web.app/"
         }
       ]
     },
@@ -102,6 +94,6 @@
   "button": {
     "visible": true,
     "label": "Visit on Github",
-    "url": "https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal"
+    "url": "https://github.com/Sepzie/"
   }
 }
