@@ -27,12 +27,12 @@
       "image": {
         "src": "../../images/tripmonitor.png",
         "alt": "Trip Monitoring Dashboard Screenshot",
-        "linkTo": "https://github.com/christietsang/EnviLabs-Hackathon/"
+        "linkTo": "https://github.com/Sepzie/EnviLabs-Hackathon"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/christietsang/EnviLabs-Hackathon/"
+          "url": "https://github.com/Sepzie/EnviLabs-Hackathon"
         }
       ]
     },
@@ -45,12 +45,12 @@
       "image": {
         "src": "../../images/outliner.jpg",
         "alt": "Trip Monitoring Dashboard Screenshot",
-        "linkTo": "https://github.com/christietsang/OutlinerBot/"
+        "linkTo": "https://github.com/Sepzie/OutlinerBot/"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/christietsang/OutlinerBot/"
+          "url": "https://github.com/Sepzie/OutlinerBot/"
         }
       ]
     },
@@ -93,7 +93,7 @@
   ],
   "button": {
     "visible": true,
-    "label": "Visit on Github",
+    "label": "Visit Github",
     "url": "https://github.com/Sepzie/"
   }
 }
