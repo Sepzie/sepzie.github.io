@@ -1,6 +1,7 @@
 {
   "interests": [
     {
+      "category": "Languages",
       "label": "Python",
       "image": {
         "src": "../../images/python.png",
@@ -8,6 +9,7 @@
       }
     },
     {
+      "category": "Languages",
       "label": "Java",
       "image": {
         "src": "../../images/java.png",
@@ -15,6 +17,7 @@
       }
     },
     {
+      "category": "Languages",
       "label": "Kotlin",
       "image": {
         "src": "../../images/kotlin.png",
@@ -22,6 +25,7 @@
       }
     },
     {
+      "category": "Languages",
       "label": "C",
       "image": {
         "src": "../../images/c.png",
@@ -29,6 +33,7 @@
       }
     },
     {
+      "category": "Languages",
       "label": "JavaScript",
       "image": {
         "src": "../../images/js.png",
@@ -36,6 +41,7 @@
       }
     },
     {
+      "category": "Frameworks",
       "label": "React",
       "image": {
         "src": "../../images/react.png",
@@ -43,6 +49,7 @@
       }
     },
     {
+      "category": "Backend",
       "label": "PostgreSQL",
       "image": {
         "src": "../../images/postgresql.png",
@@ -50,6 +57,7 @@
       }
     },
     {
+      "category": "Platforms",
       "label": "Android",
       "image": {
         "src": "../../images/android.png",
@@ -57,6 +65,7 @@
       }
     },
     {
+      "category": "Backend",
       "label": "REST API",
       "image": {
         "src": "../../images/cloud.png",
@@ -64,6 +73,7 @@
       }
     },
     {
+      "category": "Embedded/IoT",
       "label": "Firmware (PSoC 6 MCU)",
       "image": {
         "src": "../../images/firmware.png",
@@ -71,6 +81,7 @@
       }
     },
     {
+      "category": "Embedded/IoT",
       "label": "Bluetooth LE",
       "image": {
         "src": "../../images/bluetooth.png",
@@ -78,6 +89,7 @@
       }
     },
     {
+      "category": "Languages",
       "label": "R",
       "image": {
         "src": "../../images/R.png",
@@ -85,6 +97,7 @@
       }
     },
     {
+      "category": "DevOps",
       "label": "Docker",
       "image": {
         "src": "../../images/docker.webp",
@@ -92,6 +105,7 @@
       }
     },
     {
+      "category": "Frameworks",
       "label": "Django",
       "image": {
         "src": "../../images/django.png",
@@ -99,6 +113,7 @@
       }
     },
     {
+      "category": "Frameworks",
       "label": "Flask",
       "image": {
         "src": "../../images/flask.png",
@@ -106,6 +121,7 @@
       }
     },
     {
+      "category": "Frameworks",
       "label": "Fast API",
       "image": {
         "src": "../../images/fastapi.webp",
@@ -113,6 +129,7 @@
       }
     },
     {
+      "category": "DevOps",
       "label": "Git",
       "image": {
         "src": "../../images/git.png",

@@ -1,0 +1,64 @@
+.Projects {
+    display: flex;
+    flex-direction: row;
+    margin-top: -2rem;
+}
+
+.FilterWrapper {
+    margin-bottom: 2rem;
+}
+
+.FilterLabel {
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--subtext-color);
+}
+
+.Filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.FilterButton {
+    border: 0.125rem solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background: var(--card-background-color);
+    color: inherit;
+    font: inherit;
+    padding: 0.4rem 0.85rem;
+    cursor: pointer;
+    text-align: left;
+}
+
+.FilterButtonActive {
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+
+.FilterButton:focus-visible {
+    outline: 0.125rem solid var(--primary-color);
+    outline-offset: 0.2rem;
+}
+
+.EmptyState {
+    margin-top: 1.5rem;
+    color: var(--subtext-color);
+}
+
+.MoreProjects {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .Projects {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .MoreProjects {
+        margin-top: 0;
+    }
+}
