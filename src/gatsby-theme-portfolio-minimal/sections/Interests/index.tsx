@@ -42,16 +42,6 @@ export function InterestsSection(props: PageSection): React.ReactElement {
         [data.interests, shownInterests],
     );
 
-    React.useEffect(() => {
-        if (revealFromIndex === null) {
-            return undefined;
-        }
-        const timeout = window.setTimeout(() => {
-            setRevealFromIndex(null);
-        }, 500);
-        return () => window.clearTimeout(timeout);
-    }, [revealFromIndex]);
-
     const categoryLookup = React.useMemo(() => {
         const lookup = new Map<string, string>();
         (interestsContent?.interests ?? []).forEach((interest: { label?: string; category?: string }) => {
