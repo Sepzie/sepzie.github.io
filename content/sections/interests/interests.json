@@ -106,6 +106,22 @@
     },
     {
       "category": "Backend",
+      "label": "AWS",
+      "image": {
+        "src": "../../images/aws.png",
+        "alt": "AWS"
+      }
+    },
+    {
+      "category": "Backend",
+      "label": "Google Cloud Console",
+      "image": {
+        "src": "../../images/googlecloud.png",
+        "alt": "Google Cloud Console"
+      }
+    },
+    {
+      "category": "Backend",
       "label": "PostgreSQL",
       "image": {
         "src": "../../images/postgresql.png",
@@ -134,14 +150,6 @@
       "image": {
         "src": "../../images/android.png",
         "alt": "Android"
-      }
-    },
-    {
-      "category": "Backend",
-      "label": "REST API",
-      "image": {
-        "src": "../../images/cloud.png",
-        "alt": "REST API"
       }
     },
     {
@@ -262,6 +270,22 @@
       "image": {
         "src": "../../images/microservices.png",
         "alt": "Microservices"
+      }
+    },
+    {
+      "category": "Architecture",
+      "label": "REST API",
+      "image": {
+        "src": "../../images/cloud.png",
+        "alt": "REST API"
+      }
+    },
+    {
+      "category": "Architecture",
+      "label": "Serverless",
+      "image": {
+        "src": "../../images/serverless.png",
+        "alt": "Serverless"
       }
     },
     {

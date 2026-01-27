@@ -16,8 +16,10 @@ export function InterestsSection(props: PageSection): React.ReactElement {
     const [shownInterests, setShownInterests] = React.useState<number>(
         shouldShowButton ? initiallyShownInterests : data.interests.length,
     );
+    const [revealFromIndex, setRevealFromIndex] = React.useState<number | null>(null);
 
     function loadMoreHandler() {
+        setRevealFromIndex(shownInterests);
         setShownInterests(data.interests.length);
     }
 
@@ -39,6 +41,16 @@ export function InterestsSection(props: PageSection): React.ReactElement {
             })),
         [data.interests, shownInterests],
     );
+
+    React.useEffect(() => {
+        if (revealFromIndex === null) {
+            return undefined;
+        }
+        const timeout = window.setTimeout(() => {
+            setRevealFromIndex(null);
+        }, 500);
+        return () => window.clearTimeout(timeout);
+    }, [revealFromIndex]);
 
     const categoryLookup = React.useMemo(() => {
         const lookup = new Map<string, string>();
@@ -72,28 +84,40 @@ export function InterestsSection(props: PageSection): React.ReactElement {
                             <div className={classes.CategoryHeading}>{category}</div>
                             <div className={classes.InterestsGrid}>
                                 {interests.map((interest) => {
+                                    const shouldReveal =
+                                        revealFromIndex !== null && interest._index >= revealFromIndex;
+                                    const isLongLabel = interest.label.length > 18;
+                                    const isExtraLongLabel = interest.label.length > 26;
                                     return (
-                                        <Animation
+                                        <button
                                             key={`${category}-${interest.label}-${interest._index}`}
-                                            type="scaleIn"
-                                            delay={interest._index * 100}
+                                            type="button"
+                                            className={`${classes.Interest} ${
+                                                shouldReveal ? classes.InterestReveal : ''
+                                            }`}
+                                            style={
+                                                shouldReveal
+                                                    ? { animationDelay: `${(interest._index - revealFromIndex) * 40}ms` }
+                                                    : undefined
+                                            }
+                                            onClick={() => skillClickHandler(interest.label)}
+                                            aria-label={`Filter projects by ${interest.label}`}
                                         >
-                                            <button
-                                                type="button"
-                                                className={classes.Interest}
-                                                onClick={() => skillClickHandler(interest.label)}
-                                                aria-label={`Filter projects by ${interest.label}`}
-                                            >
-                                                {interest.image.src && (
-                                                    <GatsbyImage
-                                                        image={interest.image.src.childImageSharp.gatsbyImageData}
-                                                        className={classes.Icon}
-                                                        alt={interest.image.alt || `Interest ${interest.label}`}
-                                                    />
+                                            {interest.image.src && (
+                                                <GatsbyImage
+                                                    image={interest.image.src.childImageSharp.gatsbyImageData}
+                                                    className={classes.Icon}
+                                                    alt={interest.image.alt || `Interest ${interest.label}`}
+                                                />
                                                 )}
-                                                {interest.label}
+                                                <span
+                                                    className={`${classes.Label} ${
+                                                        isLongLabel ? classes.LabelSmall : ''
+                                                    } ${isExtraLongLabel ? classes.LabelXSmall : ''}`}
+                                                >
+                                                    {interest.label}
+                                                </span>
                                             </button>
-                                        </Animation>
                                     );
                                 })}
                             </div>
