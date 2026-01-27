@@ -37,11 +37,26 @@
     line-height: 1.2;
     white-space: nowrap;
     overflow: hidden;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease,
+        background-color 180ms ease;
 }
 
 .Interest:focus-visible {
     outline: 0.125rem solid var(--primary-color);
     outline-offset: 0.2rem;
+}
+
+.Interest:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+.Interest:active {
+    transform: translateY(0);
+    box-shadow: none;
 }
 
 .InterestReveal {
@@ -71,8 +86,23 @@
     margin-top: 1rem;
 }
 
-.LoadMore button {
+.LoadMore :global(.Button) {
     max-width: 12rem;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        filter 180ms ease;
+}
+
+.LoadMore :global(.Button):hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.12);
+    filter: brightness(1.05);
+}
+
+.LoadMore :global(.Button):active {
+    transform: translateY(0);
+    box-shadow: none;
 }
 
 @keyframes interest-reveal {

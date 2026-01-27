@@ -31,6 +31,12 @@
     padding: 0.4rem 0.85rem;
     cursor: pointer;
     text-align: left;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        background-color 180ms ease,
+        color 180ms ease,
+        border-color 180ms ease;
 }
 
 .FilterButtonActive {
@@ -43,6 +49,16 @@
     outline-offset: 0.2rem;
 }
 
+.FilterButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.45rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.FilterButton:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
 .EmptyState {
     margin-top: 1.5rem;
     color: var(--subtext-color);
@@ -51,6 +67,24 @@
 .MoreProjects {
     margin-top: 4rem;
     text-align: center;
+}
+
+.MoreProjects :global(.Button) {
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        filter 180ms ease;
+}
+
+.MoreProjects :global(.Button):hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.55rem 1.2rem rgba(0, 0, 0, 0.12);
+    filter: brightness(1.05);
+}
+
+.MoreProjects :global(.Button):active {
+    transform: translateY(0);
+    box-shadow: none;
 }
 
 @media (min-width: 992px) {
