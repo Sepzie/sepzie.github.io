@@ -41,6 +41,46 @@
       }
     },
     {
+      "category": "Languages",
+      "label": "TypeScript",
+      "image": {
+        "src": "../../images/typescript.png",
+        "alt": "TypeScript"
+      }
+    },
+    {
+      "category": "Languages",
+      "label": "HTML",
+      "image": {
+        "src": "../../images/html.png",
+        "alt": "HTML"
+      }
+    },
+    {
+      "category": "Languages",
+      "label": "CSS",
+      "image": {
+        "src": "../../images/css.png",
+        "alt": "CSS"
+      }
+    },
+    {
+      "category": "Frameworks",
+      "label": "Expo",
+      "image": {
+        "src": "../../images/expo.png",
+        "alt": "Expo"
+      }
+    },
+    {
+      "category": "Frameworks",
+      "label": "React Native",
+      "image": {
+        "src": "../../images/react-native.png",
+        "alt": "React Native"
+      }
+    },
+    {
       "category": "Frameworks",
       "label": "React",
       "image": {
@@ -49,11 +89,43 @@
       }
     },
     {
+      "category": "Frameworks",
+      "label": "Next.js",
+      "image": {
+        "src": "../../images/nextjs.png",
+        "alt": "Next.js"
+      }
+    },
+    {
+      "category": "Frameworks",
+      "label": "Svelte",
+      "image": {
+        "src": "../../images/svelte.png",
+        "alt": "Svelte"
+      }
+    },
+    {
       "category": "Backend",
       "label": "PostgreSQL",
       "image": {
         "src": "../../images/postgresql.png",
         "alt": ""
+      }
+    },
+    {
+      "category": "Backend",
+      "label": "Supabase",
+      "image": {
+        "src": "../../images/supabase.png",
+        "alt": "Supabase"
+      }
+    },
+    {
+      "category": "Backend",
+      "label": "Firebase",
+      "image": {
+        "src": "../../images/firebase.png",
+        "alt": "Firebase"
       }
     },
     {
@@ -70,6 +142,30 @@
       "image": {
         "src": "../../images/cloud.png",
         "alt": "REST API"
+      }
+    },
+    {
+      "category": "Platforms",
+      "label": "iOS",
+      "image": {
+        "src": "../../images/ios.png",
+        "alt": "iOS"
+      }
+    },
+    {
+      "category": "Platforms",
+      "label": "App Store Connect",
+      "image": {
+        "src": "../../images/appstore.png",
+        "alt": "App Store Connect"
+      }
+    },
+    {
+      "category": "Platforms",
+      "label": "Google Play Console",
+      "image": {
+        "src": "../../images/googleplay.png",
+        "alt": "Google Play Console"
       }
     },
     {
@@ -94,6 +190,14 @@
       "image": {
         "src": "../../images/R.png",
         "alt": "R"
+      }
+    },
+    {
+      "category": "DevOps",
+      "label": "GitHub Workflows",
+      "image": {
+        "src": "../../images/github-actions.png",
+        "alt": "GitHub Workflows"
       }
     },
     {
@@ -134,6 +238,46 @@
       "image": {
         "src": "../../images/git.png",
         "alt": "Git"
+      }
+    },
+    {
+      "category": "DevOps",
+      "label": "Vercel",
+      "image": {
+        "src": "../../images/vercel.png",
+        "alt": "Vercel"
+      }
+    },
+    {
+      "category": "DevOps",
+      "label": "EAS",
+      "image": {
+        "src": "../../images/eas.png",
+        "alt": "EAS"
+      }
+    },
+    {
+      "category": "Architecture",
+      "label": "Microservices",
+      "image": {
+        "src": "../../images/microservices.png",
+        "alt": "Microservices"
+      }
+    },
+    {
+      "category": "Languages",
+      "label": "Swift",
+      "image": {
+        "src": "../../images/swift.png",
+        "alt": "Swift"
+      }
+    },
+    {
+      "category": "Languages",
+      "label": "C++",
+      "image": {
+        "src": "../../images/cplusplus.png",
+        "alt": "C++"
       }
     }
   ],
