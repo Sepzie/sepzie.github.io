@@ -40,6 +40,25 @@
     },
     {
       "visible": true,
+      "category": "PERSONAL PROJECT",
+      "date": "2023-02",
+      "title": "CogniEasy",
+      "description": "CogniEasy is a lightweight GPT-powered tool that turns your resume and a job description into a polished, tailored cover letter. Built by a two-person team, it streamlines the application process with a clean, fast workflow.",
+      "tags": ["Docker", "Python", "JavaScript", "HTML", "CSS", "React", "Yarn"],
+      "image": {
+        "src": "../../images/cogni-easy.png",
+        "alt": "CogniEasy Screenshot",
+        "linkTo": "https://innovatech-labs.github.io/cogni-easy/"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/orgs/innovatech-labs/repositories"
+        }
+      ]
+    },
+    {
+      "visible": true,
       "category": "HACKATHON",
       "date": "2022-01",
       "title": "Outliner Discord Bot",
