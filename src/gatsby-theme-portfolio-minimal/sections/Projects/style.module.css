@@ -25,18 +25,17 @@
 .FilterButton {
     border: 0.125rem solid var(--primary-color);
     border-radius: var(--border-radius);
-    background: var(--card-background-color);
-    color: inherit;
+    background: linear-gradient(to right, var(--primary-color) 50%, var(--card-background-color) 50%);
+    background-size: 205% 100%;
+    background-position: right bottom;
+    color: var(--primary-color);
     font: inherit;
     padding: 0.4rem 0.85rem;
     cursor: pointer;
     text-align: left;
     transition:
-        transform 180ms ease,
-        box-shadow 180ms ease,
-        background-color 180ms ease,
-        color 180ms ease,
-        border-color 180ms ease;
+        background-position 160ms ease-out,
+        color 160ms ease-out;
 }
 
 .FilterButtonActive {
@@ -50,13 +49,12 @@
 }
 
 .FilterButton:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 0.45rem 1rem rgba(0, 0, 0, 0.1);
+    background-position: left bottom;
+    color: var(--background-color);
 }
 
 .FilterButton:active {
-    transform: translateY(0);
-    box-shadow: none;
+    background-position: left bottom;
 }
 
 .EmptyState {
@@ -70,16 +68,23 @@
 }
 
 .MoreProjects :global(.Button) {
+    border: 0.125rem solid var(--primary-color);
+    background: linear-gradient(to right, var(--primary-color) 50%, var(--card-background-color) 50%);
+    background-size: 205% 100%;
+    background-position: right bottom;
+    color: var(--primary-color);
     transition:
+        background-position 160ms ease-out,
+        color 160ms ease-out,
         transform 180ms ease,
-        box-shadow 180ms ease,
-        filter 180ms ease;
+        box-shadow 180ms ease;
 }
 
 .MoreProjects :global(.Button):hover {
     transform: translateY(-1px);
+    background-position: left bottom;
+    color: var(--background-color);
     box-shadow: 0 0.55rem 1.2rem rgba(0, 0, 0, 0.12);
-    filter: brightness(1.05);
 }
 
 .MoreProjects :global(.Button):active {

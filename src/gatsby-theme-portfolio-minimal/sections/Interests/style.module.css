@@ -28,8 +28,10 @@
     padding: 0.6rem 0.75rem;
     border: 0.125rem solid var(--primary-color);
     border-radius: var(--border-radius);
-    background: var(--card-background-color);
-    color: inherit;
+    background: linear-gradient(to right, var(--primary-color) 50%, var(--card-background-color) 50%);
+    background-size: 205% 100%;
+    background-position: right bottom;
+    color: var(--primary-color);
     font: inherit;
     cursor: pointer;
     text-align: left;
@@ -38,10 +40,10 @@
     white-space: nowrap;
     overflow: hidden;
     transition:
+        background-position 160ms ease-out,
+        color 160ms ease-out,
         transform 180ms ease,
-        box-shadow 180ms ease,
-        border-color 180ms ease,
-        background-color 180ms ease;
+        box-shadow 180ms ease;
 }
 
 .Interest:focus-visible {
@@ -51,6 +53,8 @@
 
 .Interest:hover {
     transform: translateY(-1px);
+    background-position: left bottom;
+    color: var(--background-color);
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.08);
 }
 
@@ -88,7 +92,14 @@
 
 .LoadMore :global(.Button) {
     max-width: 12rem;
+    border: 0.125rem solid var(--primary-color);
+    background: linear-gradient(to right, var(--primary-color) 50%, var(--card-background-color) 50%);
+    background-size: 205% 100%;
+    background-position: right bottom;
+    color: var(--primary-color);
     transition:
+        background-position 160ms ease-out,
+        color 160ms ease-out,
         transform 180ms ease,
         box-shadow 180ms ease,
         filter 180ms ease;
@@ -96,8 +107,9 @@
 
 .LoadMore :global(.Button):hover {
     transform: translateY(-1px);
+    background-position: left bottom;
+    color: var(--background-color);
     box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.12);
-    filter: brightness(1.05);
 }
 
 .LoadMore :global(.Button):active {
