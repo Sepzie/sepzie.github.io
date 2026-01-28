@@ -3,7 +3,7 @@
     {
       "visible": true,
       "category": "PERSONAL PROJECT",
-      "date": "2024-01",
+      "date": "2022-10",
       "title": "Sing With Me",
       "description": "SingWithMe is a dynamic front-end React application designed to enhance the learning experience for aspiring vocalists. With its innovative approach, users can effortlessly break down complex songs into manageable segments, allowing them to perfect their skills one step at a time. The app combines the power of listening, recording, and self-evaluation to bring users closer to their singing aspirations. This project showcases my ability to bring cutting-edge technology to the world of music and education",
       "tags": ["React", "Front-end development", "Learning app"],
@@ -22,7 +22,7 @@
     {
       "visible": true,
       "category": "HACKATHON",
-      "date": "2023-10",
+      "date": "2023-01",
       "title": "Trip Monitoring Dashboard",
       "description": "Developed a full-stack trip monitoring dashboard for a mining company as part of a 6-person team during a QDS hackathon. Analyzed big data and presented conclusions and predictions in an easy-to-use web interface. Implemented a REST API using Flask and Python and utilized Google Maps API to create a heatmap of truck locations. A data-driven solution for real-time trip monitoring.",
       "tags": ["Full-Stack Development", "REST API", "React", "Flask", "Google Maps API", "Data Analysis", "Team Project"],
@@ -41,7 +41,7 @@
     {
       "visible": true,
       "category": "HACKATHON",
-      "date": "2023-08",
+      "date": "2022-01",
       "title": "Outliner Discord Bot",
       "description": "Outliner is a discord bot that answers questions from BCIT course outlines using OpenAI answer API. BCIT students are known to have immense workloads and may not always have time to manually check course outlines. To solve this problem, our team built Outliner to help students be better informed while saving time.",
       "tags": ["Python", "OpenAI API", "Web Scraping", "Team Project"],
@@ -60,7 +60,7 @@
     {
       "visible": true,
       "category": "COURSE PROJECT",
-      "date": "2023-04",
+      "date": "2021-12",
       "title": "Virtual Learning Buddy",
       "description": "Virtual Learning Buddy (VLB) is a web-based application prototype designed to enhance the online learning experience. The goal of VLB is to provide students with a comprehensive and interactive learning environment that helps them to stay focused and minimize distractions. The application brings together key elements of an effective learning setup in a single platform, making it an ideal tool for students looking to improve their study habits and productivity. VLB is the result of a group project by students of a computer science program, and it showcases their technical skills and expertise in web development.",
       "tags": ["HTML", "CSS", "JavaScript", "Bootsrap", "Firebase", "Team Project"],
@@ -79,7 +79,7 @@
     {
       "visible": true,
       "category": "COURSE PROJECT",
-      "date": "2022-11",
+      "date": "2022-01",
       "title": "Arena of Blood",
       "description": "Virtual Learning Buddy (VLB) is a web-based application prototype designed to enhance the online learning experience. The goal of VLB is to provide students with a comprehensive and interactive learning environment that helps them to stay focused and minimize distractions. The application brings together key elements of an effective learning setup in a single platform, making it an ideal tool for students looking to improve their study habits and productivity. VLB is the result of a group project by students of a computer science program, and it showcases their technical skills and expertise in web development.",
       "tags": ["Python", "Unit Testing", "Documentaiton", "Text Based ", "Firebase", "Individual Project", "Text Based RPG"],
