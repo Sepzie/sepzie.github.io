@@ -52,6 +52,10 @@
       },
       "links": [
         {
+          "type": "external",
+          "url": "https://innovatech-labs.github.io/cogni-easy/"
+        },
+        {
           "type": "github",
           "url": "https://github.com/orgs/innovatech-labs/repositories"
         }
