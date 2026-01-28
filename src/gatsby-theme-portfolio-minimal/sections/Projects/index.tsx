@@ -5,11 +5,28 @@ import { Project } from 'gatsby-theme-portfolio-minimal/src/components/Project';
 import { Section } from 'gatsby-theme-portfolio-minimal/src/components/Section';
 import { Slider } from 'gatsby-theme-portfolio-minimal/src/components/Slider';
 import { PageSection } from 'gatsby-theme-portfolio-minimal/src/types';
+import projectsContent from '../../../../content/sections/projects/projects.json';
 import { useLocalDataSource } from './data';
 import * as classes from './style.module.css';
 
 function normalizeTag(value: string): string {
     return value.trim().toLowerCase();
+}
+
+function parseProjectDate(value?: string): number | null {
+    if (!value) {
+        return null;
+    }
+    const trimmed = value.trim();
+    if (trimmed.length === 0) {
+        return null;
+    }
+    if (/^\d{4}-\d{2}$/.test(trimmed)) {
+        const parsed = Date.parse(`${trimmed}-01T00:00:00Z`);
+        return Number.isNaN(parsed) ? null : parsed;
+    }
+    const parsed = Date.parse(trimmed);
+    return Number.isNaN(parsed) ? null : parsed;
 }
 
 export function ProjectsSection(props: PageSection): React.ReactElement {
@@ -18,9 +35,42 @@ export function ProjectsSection(props: PageSection): React.ReactElement {
     const projects = React.useMemo(() => data.projects.filter((project) => project.visible), [data.projects]);
     const [activeTag, setActiveTag] = React.useState<string | null>(null);
 
+    const dateLookup = React.useMemo(() => {
+        const lookup = new Map<string, string>();
+        (projectsContent?.projects ?? []).forEach((project: { title?: string; date?: string }) => {
+            if (!project?.title) {
+                return;
+            }
+            lookup.set(project.title, project.date ?? '');
+        });
+        return lookup;
+    }, []);
+
+    const sortedProjects = React.useMemo(() => {
+        const projectsWithDates = projects.map((project, index) => ({
+            ...project,
+            date: dateLookup.get(project.title),
+            _index: index,
+        }));
+        return projectsWithDates.sort((a, b) => {
+            const aTime = parseProjectDate(a.date);
+            const bTime = parseProjectDate(b.date);
+            if (aTime !== null && bTime !== null) {
+                return bTime - aTime;
+            }
+            if (aTime !== null) {
+                return -1;
+            }
+            if (bTime !== null) {
+                return 1;
+            }
+            return a._index - b._index;
+        });
+    }, [projects, dateLookup]);
+
     const availableTags = React.useMemo(() => {
         const tagMap = new Map<string, string>();
-        projects.forEach((project) => {
+        sortedProjects.forEach((project) => {
             project.tags?.forEach((tag) => {
                 const normalized = normalizeTag(tag);
                 if (!tagMap.has(normalized)) {
@@ -29,17 +79,17 @@ export function ProjectsSection(props: PageSection): React.ReactElement {
             });
         });
         return Array.from(tagMap.values()).sort((a, b) => a.localeCompare(b));
-    }, [projects]);
+    }, [sortedProjects]);
 
     const normalizedActiveTag = activeTag ? normalizeTag(activeTag) : null;
     const filteredProjects = React.useMemo(() => {
         if (!normalizedActiveTag) {
-            return projects;
+            return sortedProjects;
         }
-        return projects.filter((project) =>
+        return sortedProjects.filter((project) =>
             project.tags?.some((tag) => normalizeTag(tag) === normalizedActiveTag),
         );
-    }, [projects, normalizedActiveTag]);
+    }, [sortedProjects, normalizedActiveTag]);
 
     React.useEffect(() => {
         if (typeof window === 'undefined') {
