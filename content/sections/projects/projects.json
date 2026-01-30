@@ -3,6 +3,43 @@
     {
       "visible": true,
       "category": "PERSONAL PROJECT",
+      "date": "2025-04",
+      "title": "AI System Designer",
+      "description": "AI System Designer is a web app for AI-assisted system design with project workspaces, streaming chat, and generated assets like Markdown and Mermaid diagrams. It supports RAG-style context assembly, rate limits, and alerting for a production-ready workflow.",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "Supabase",
+        "Postgres",
+        "LangChain",
+        "OpenAI",
+        "Mermaid",
+        "Markdown",
+        "Cypress",
+        "RAG",
+        "Streaming"
+      ],
+      "image": {
+        "src": "../../images/system-designer-ai.png",
+        "alt": "AI System Designer Screenshot",
+        "linkTo": "https://systems-designer-ai.vercel.app/login"
+      },
+      "links": [
+        {
+          "type": "external",
+          "url": "https://systems-designer-ai.vercel.app/login"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/Sepzie/SystemsDesignerAI"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "PERSONAL PROJECT",
       "date": "2022-10",
       "title": "Sing With Me",
       "description": "SingWithMe is a dynamic front-end React application designed to enhance the learning experience for aspiring vocalists. With its innovative approach, users can effortlessly break down complex songs into manageable segments, allowing them to perfect their skills one step at a time. The app combines the power of listening, recording, and self-evaluation to bring users closer to their singing aspirations. This project showcases my ability to bring cutting-edge technology to the world of music and education",
