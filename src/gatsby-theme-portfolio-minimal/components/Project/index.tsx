@@ -1,5 +1,6 @@
 import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import type { IGatsbyImageData } from 'gatsby-plugin-image';
 import { Animation } from 'gatsby-theme-portfolio-minimal/src/components/Animation';
 import { Icon } from 'gatsby-theme-portfolio-minimal/src/components/Icon';
 import { useMediaQuery } from 'gatsby-theme-portfolio-minimal/src/hooks/useMediaQuery';
@@ -54,6 +55,41 @@ function formatProjectDate(value?: string): string | null {
 export function Project(props: ProjectProps): React.ReactElement {
     const isDesktopBreakpoint = useMediaQuery('(min-width: 992px)');
     const dateLabel = formatProjectDate(props.data.date);
+    const imageSource = props.data.image.src as
+        | {
+              childImageSharp?: {
+                  gatsbyImageData?: IGatsbyImageData;
+              };
+              publicURL?: string;
+          }
+        | null;
+    const gatsbyImageData = imageSource?.childImageSharp?.gatsbyImageData;
+    const fallbackUrl = imageSource?.publicURL;
+    const imageAlt = props.data.image.alt || `Project ${props.data.title}`;
+
+    const imageElement = gatsbyImageData ? (
+        <GatsbyImage
+            className={classes.ProjectImageWrapper}
+            imgClassName={classes.ProjectImage}
+            objectFit={props.data.image.objectFit}
+            image={gatsbyImageData}
+            alt={imageAlt}
+        />
+    ) : fallbackUrl ? (
+        <div className={classes.ProjectImageWrapper}>
+            <img
+                className={classes.ProjectImage}
+                src={fallbackUrl}
+                alt={imageAlt}
+                style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: props.data.image.objectFit ?? 'cover',
+                }}
+                loading="lazy"
+            />
+        </div>
+    ) : null;
 
     return (
         <Animation
@@ -101,26 +137,12 @@ export function Project(props: ProjectProps): React.ReactElement {
                         })}
                 </div>
             </div>
-            {props.data.image.src && props.data.image.linkTo && (
+            {imageElement && props.data.image.linkTo && (
                 <a href={props.data.image.linkTo} target="_blank" rel="noopener noreferrer" aria-label="External Link">
-                    <GatsbyImage
-                        className={classes.ProjectImageWrapper}
-                        imgClassName={classes.ProjectImage}
-                        objectFit={props.data.image.objectFit}
-                        image={props.data.image.src.childImageSharp.gatsbyImageData}
-                        alt={props.data.image.alt || `Project ${props.data.title}`}
-                    />
+                    {imageElement}
                 </a>
             )}
-            {props.data.image.src && !props.data.image.linkTo && (
-                <GatsbyImage
-                    className={classes.ProjectImageWrapper}
-                    imgClassName={classes.ProjectImage}
-                    objectFit={props.data.image.objectFit}
-                    image={props.data.image.src.childImageSharp.gatsbyImageData}
-                    alt={props.data.image.alt || `Project ${props.data.title}`}
-                />
-            )}
+            {imageElement && !props.data.image.linkTo && imageElement}
         </Animation>
     );
 }

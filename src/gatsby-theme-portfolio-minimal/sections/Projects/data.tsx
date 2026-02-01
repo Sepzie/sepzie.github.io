@@ -34,6 +34,7 @@ export const useLocalDataSource = (): ProjectsSectionQueryResult => {
                                 childImageSharp {
                                     gatsbyImageData(width: 400)
                                 }
+                                publicURL
                             }
                             objectFit
                         }

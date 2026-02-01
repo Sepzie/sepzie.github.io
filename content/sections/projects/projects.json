@@ -81,6 +81,35 @@
     },
     {
       "visible": true,
+      "category": "COURSE PROJECT",
+      "date": "2023-03",
+      "title": "Sky Surfer",
+      "description": "Collaborated with a three-person team to build a Kotlin-based Android game inspired by Flappy Bird. Implemented MVVM to separate game logic from UI, a navigation graph with multiple fragments for smooth menu flow, and Firestore authentication plus leaderboard storage. Built core gameplay systems including frame-by-frame rendering and collision detection.",
+      "tags": [
+        "Kotlin",
+        "Android",
+        "MVVM",
+        "Firebase",
+        "Firestore",
+        "Navigation Component",
+        "Fragments",
+        "Game Development",
+        "Team Project"
+      ],
+      "image": {
+        "src": "../../images/sky-surfer-demo.gif",
+        "alt": "Sky Surfer gameplay demo",
+        "linkTo": "https://raw.githubusercontent.com/Sepzie/COMP3717-Android-Term-Project/refs/heads/main/sky_surfer_demo.gif"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/Sepzie/COMP3717-Android-Term-Project"
+        }
+      ]
+    },
+    {
+      "visible": true,
       "category": "PERSONAL PROJECT",
       "date": "2023-02",
       "title": "CogniEasy",
