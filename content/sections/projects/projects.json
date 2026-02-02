@@ -2,6 +2,35 @@
   "projects": [
     {
       "visible": true,
+      "category": "INDUSTRY PROJECT",
+      "date": "2023-12",
+      "title": "ODEN - Open Data Developer Network",
+      "description": "ODEN was a large-scale collaborative effort to make open data more accessible. I worked in a team of 19, contributing to both the full-stack team and the tooling team. On the full-stack side, I built features using React, JavaScript, Google Cloud Functions, and a SQL database. On tooling, I helped create data pipelines along with validation and sanitization utilities. Working with such a large, cross-functional team was a great exercise in communication and coordination.",
+      "tags": [
+        "React",
+        "JavaScript",
+        "Google Cloud Functions",
+        "SQL",
+        "Data Pipelines"
+      ],
+      "image": {
+        "src": "../../images/oden.png",
+        "alt": "ODEN Open Data Developer Network",
+        "linkTo": "https://github.com/OpendataDeveloperNetwork/ODEN-Client"
+      },
+      "links": [
+        {
+          "type": "external",
+          "url": "https://terratap-oden-client-v2.web.app/"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/OpendataDeveloperNetwork/ODEN-Client"
+        }
+      ]
+    },
+    {
+      "visible": true,
       "category": "TERM PROJECT",
       "date": "2023-11",
       "title": "YOLO Safety Helmet Detection",
