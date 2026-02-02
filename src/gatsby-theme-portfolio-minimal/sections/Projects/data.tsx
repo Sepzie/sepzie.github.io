@@ -38,6 +38,10 @@ export const useLocalDataSource = (): ProjectsSectionQueryResult => {
                             }
                             objectFit
                         }
+                        video {
+                            embedUrl
+                            title
+                        }
                         links {
                             type
                             url

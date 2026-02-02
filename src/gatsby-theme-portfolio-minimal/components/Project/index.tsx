@@ -16,6 +16,10 @@ export interface Project {
     title: string;
     description: string;
     image: ImageObject & { linkTo?: string };
+    video?: {
+        embedUrl: string;
+        title?: string;
+    };
     tags?: string[];
     links?: {
         type: LinkType;
@@ -66,18 +70,20 @@ export function Project(props: ProjectProps): React.ReactElement {
     const gatsbyImageData = imageSource?.childImageSharp?.gatsbyImageData;
     const fallbackUrl = imageSource?.publicURL;
     const imageAlt = props.data.image.alt || `Project ${props.data.title}`;
+    const videoData = props.data.video;
+    const hasVideo = Boolean(videoData?.embedUrl);
     const imageElement = gatsbyImageData ? (
         <GatsbyImage
-            className={classes.ProjectImageWrapper}
-            imgClassName={classes.ProjectImage}
+            className={classes.ProjectMediaWrapper}
+            imgClassName={classes.ProjectMedia}
             objectFit={props.data.image.objectFit}
             image={gatsbyImageData}
             alt={imageAlt}
         />
     ) : fallbackUrl ? (
-        <div className={classes.ProjectImageWrapper}>
+        <div className={classes.ProjectMediaWrapper}>
             <img
-                className={classes.ProjectImage}
+                className={classes.ProjectMedia}
                 src={fallbackUrl}
                 alt={imageAlt}
                 style={{
@@ -89,6 +95,20 @@ export function Project(props: ProjectProps): React.ReactElement {
             />
         </div>
     ) : null;
+    const videoElement = hasVideo ? (
+        <div className={classes.ProjectMediaWrapper}>
+            <iframe
+                className={classes.ProjectMedia}
+                src={videoData?.embedUrl}
+                title={videoData?.title ?? `${props.data.title} video`}
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+            />
+        </div>
+    ) : null;
+    const mediaElement = videoElement ?? imageElement;
 
     return (
         <Animation
@@ -136,12 +156,12 @@ export function Project(props: ProjectProps): React.ReactElement {
                         })}
                 </div>
             </div>
-            {imageElement && props.data.image.linkTo && (
+            {mediaElement && !videoElement && props.data.image.linkTo && (
                 <a href={props.data.image.linkTo} target="_blank" rel="noopener noreferrer" aria-label="External Link">
-                    {imageElement}
+                    {mediaElement}
                 </a>
             )}
-            {imageElement && !props.data.image.linkTo && imageElement}
+            {mediaElement && (videoElement || !props.data.image.linkTo) && mediaElement}
         </Animation>
     );
 }
