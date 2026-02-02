@@ -46,6 +46,7 @@ function formatProjectDate(value?: string): string | null {
         return new Intl.DateTimeFormat('en-US', {
             month: 'short',
             year: 'numeric',
+            timeZone: 'UTC',
         }).format(new Date(parsed));
     }
     return trimmed;
