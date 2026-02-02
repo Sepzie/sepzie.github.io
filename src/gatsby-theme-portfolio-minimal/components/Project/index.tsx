@@ -1,6 +1,5 @@
 import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import type { IGatsbyImageData } from 'gatsby-plugin-image';
 import { Animation } from 'gatsby-theme-portfolio-minimal/src/components/Animation';
 import { Icon } from 'gatsby-theme-portfolio-minimal/src/components/Icon';
 import { useMediaQuery } from 'gatsby-theme-portfolio-minimal/src/hooks/useMediaQuery';
@@ -58,7 +57,7 @@ export function Project(props: ProjectProps): React.ReactElement {
     const imageSource = props.data.image.src as
         | {
               childImageSharp?: {
-                  gatsbyImageData?: IGatsbyImageData;
+                  gatsbyImageData?: import('gatsby-plugin-image').IGatsbyImageData;
               };
               publicURL?: string;
           }
@@ -66,7 +65,6 @@ export function Project(props: ProjectProps): React.ReactElement {
     const gatsbyImageData = imageSource?.childImageSharp?.gatsbyImageData;
     const fallbackUrl = imageSource?.publicURL;
     const imageAlt = props.data.image.alt || `Project ${props.data.title}`;
-
     const imageElement = gatsbyImageData ? (
         <GatsbyImage
             className={classes.ProjectImageWrapper}
