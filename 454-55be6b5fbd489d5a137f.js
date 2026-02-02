@@ -1,0 +1,1 @@
+(self.webpackChunkgatsby_starter_portfolio_minimal_theme=self.webpackChunkgatsby_starter_portfolio_minimal_theme||[]).push([[454],{6454:function(){}}]);
