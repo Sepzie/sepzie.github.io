@@ -25,8 +25,8 @@
         { "label": "Projects", "url": "/#projects" }
       ],
       "ctaButton": {
-        "label": "Resume",
-        "url": "./Sepehr_ZohooriRad_Resume.pdf"
+        "openNewTab": false,
+        "visible": false
       },
       "footer": [
         { "label": "Created with Gatsby", "url": "https://www.gatsbyjs.com/" },
