@@ -2,6 +2,34 @@
   "projects": [
     {
       "visible": true,
+      "category": "TERM PROJECT",
+      "date": "2023-11",
+      "title": "YOLO Safety Helmet Detection",
+      "description": "An object detection system using YOLOv5 to identify safety helmets in images and video streams for workplace safety monitoring. Features model training on custom datasets, real-time detection via webcam, and deployment support for NVIDIA Jetson Nano edge devices.",
+      "tags": [
+        "Python",
+        "YOLOv5",
+        "PyTorch",
+        "Computer Vision",
+        "Object Detection",
+        "Docker",
+        "Edge Deployment",
+        "Jetson Nano"
+      ],
+      "image": {
+        "src": "../../images/helmet-detection.jpg",
+        "alt": "Safety helmet detection demo showing YOLOv5 predictions",
+        "linkTo": "https://github.com/Sepzie/yolo-safety-helmet-detection"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/Sepzie/yolo-safety-helmet-detection"
+        }
+      ]
+    },
+    {
+      "visible": true,
       "category": "PERSONAL PROJECT",
       "date": "2025-04",
       "title": "AI System Designer",
@@ -139,7 +167,7 @@
       "description": "React-based inventory manager with a Firebase backend for tracking items and changes in real time.",
       "tags": ["React", "Firebase", "Firestore", "CRUD", "Inventory"],
       "image": {
-        "src": "../../images/react.png",
+        "src": "../../images/inventory-manager.png",
         "alt": "Inventory Manager Screenshot",
         "linkTo": "https://lively-kitten-05fcac.netlify.app/"
       },
@@ -195,7 +223,7 @@
     {
       "visible": true,
       "category": "COURSE PROJECT",
-      "date": "2022-01",
+      "date": "2021-11",
       "title": "Arena of Blood",
       "description": "Virtual Learning Buddy (VLB) is a web-based application prototype designed to enhance the online learning experience. The goal of VLB is to provide students with a comprehensive and interactive learning environment that helps them to stay focused and minimize distractions. The application brings together key elements of an effective learning setup in a single platform, making it an ideal tool for students looking to improve their study habits and productivity. VLB is the result of a group project by students of a computer science program, and it showcases their technical skills and expertise in web development.",
       "tags": ["Python", "Unit Testing", "Documentaiton", "Text Based ", "Firebase", "Individual Project", "Text Based RPG"],

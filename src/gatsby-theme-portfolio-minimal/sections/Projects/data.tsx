@@ -16,7 +16,7 @@ interface ProjectsSectionQueryResult {
 
 export const useLocalDataSource = (): ProjectsSectionQueryResult => {
     return useStaticQuery(graphql`
-        query ProjectsSectionQuery {
+        query CustomProjectsSectionQuery {
             allProjectsJson {
                 sections: nodes {
                     button {
