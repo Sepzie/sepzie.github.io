@@ -2,6 +2,38 @@
   "projects": [
     {
       "visible": true,
+      "category": "MOBILE APP",
+      "date": "2026-01",
+      "title": "SingWithMe",
+      "description": "SingWithMe is the full realization of an idea I've been chasing since my first React project. It's a mobile app that helps casual singers improve by combining vocal isolation, key/tempo shifting, and synchronized lyrics—all powered by AI. The backend uses Firebase Cloud Functions and Google Cloud Run to run Demucs for vocal separation and OpenAI Whisper for transcription. I built it with Expo and TypeScript, designed it with a sleek dark theme and neon highlights, and shipped it to both the App Store and Google Play using EAS, Fastlane, and the respective consoles. It brings together my passions for music, software engineering, and AI into one polished product.",
+      "tags": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "Firebase",
+        "Cloud Functions",
+        "Demucs",
+        "OpenAI Whisper",
+        "iOS",
+        "Android",
+        "EAS",
+        "Docker",
+        "Microservices"
+      ],
+      "image": {
+        "src": "../../images/singwithme-app.png",
+        "alt": "SingWithMe App",
+        "linkTo": "https://www.singwithme.app/"
+      },
+      "links": [
+        {
+          "type": "external",
+          "url": "https://www.singwithme.app/"
+        }
+      ]
+    },
+    {
+      "visible": true,
       "category": "OPEN SOURCE LIBRARY",
       "date": "2026-01",
       "title": "Sezo Audio Engine",
