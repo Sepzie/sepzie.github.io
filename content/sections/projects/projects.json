@@ -2,6 +2,40 @@
   "projects": [
     {
       "visible": true,
+      "category": "OPEN SOURCE LIBRARY",
+      "date": "2026-01",
+      "title": "Sezo Audio Engine",
+      "description": "I needed an audio API for my Expo app with multi-track mixing and time/pitch shifting. On iOS, AVAudioEngine made this straightforward. On Android, there's no native advanced audio API—my only option was a professional SDK like Superpowered, costing thousands per year and total overkill for my needs. So I built Sezo Audio Engine. It includes two packages: an Android engine written in C++ published to JitPack, and an Expo module combining the Android engine with native iOS implementation, published to npm. Open sourced to save other developers the time and money I almost spent.",
+      "tags": [
+        "C++",
+        "Kotlin",
+        "Swift",
+        "Expo",
+        "React Native",
+        "Android",
+        "iOS",
+        "Audio",
+        "npm",
+        "JitPack"
+      ],
+      "image": {
+        "src": "../../images/sezo.png",
+        "alt": "Sezo Audio Engine",
+        "linkTo": "https://sepzie.github.io/SezoAudioEngine/"
+      },
+      "links": [
+        {
+          "type": "external",
+          "url": "https://sepzie.github.io/SezoAudioEngine/"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/Sepzie/SezoAudioEngine"
+        }
+      ]
+    },
+    {
+      "visible": true,
       "category": "INDUSTRY PROJECT",
       "date": "2023-12",
       "title": "ODEN - Open Data Developer Network",
