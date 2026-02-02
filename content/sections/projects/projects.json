@@ -18,7 +18,12 @@
         "Android",
         "EAS",
         "Docker",
-        "Microservices"
+        "Microservices",
+        "App Store Connect",
+        "Google Play Console",
+        "Google Cloud Console",
+        "Python",
+        "Serverless"
       ],
       "image": {
         "src": "../../images/singwithme-app.png",
