@@ -8,12 +8,10 @@
       "description": "An object detection system using YOLOv5 to identify safety helmets in images and video streams for workplace safety monitoring. Features model training on custom datasets, real-time detection via webcam, and deployment support for NVIDIA Jetson Nano edge devices.",
       "tags": [
         "Python",
-        "YOLOv5",
         "PyTorch",
-        "Computer Vision",
-        "Object Detection",
         "Docker",
-        "Edge Deployment",
+        "YOLOv5",
+        "Computer Vision",
         "Jetson Nano"
       ],
       "image": {
@@ -40,14 +38,13 @@
         "TypeScript",
         "Tailwind",
         "Supabase",
-        "Postgres",
+        "PostgreSQL",
+        "Vercel",
         "LangChain",
         "OpenAI",
-        "Mermaid",
-        "Markdown",
-        "Cypress",
         "RAG",
-        "Streaming"
+        "Cypress",
+        "Docker"
       ],
       "image": {
         "src": "../../images/system-designer-ai.png",
@@ -71,7 +68,7 @@
       "date": "2022-10",
       "title": "Sing With Me (React)",
       "description": "This was my first React project and the very first version of SingWithMe. It lets you break a song into individual lines with synchronized lyrics, so you can practice one segment at a time. You listen, record yourself, and compare. A simple loop that helped me improve my own singing. I built it to scratch my own itch, and it turned out to be a great way to learn React.",
-      "tags": ["React", "Front-end development", "Learning app"],
+      "tags": ["React", "JavaScript", "Web Audio API"],
       "image": {
         "src": "../../images/singwithme.png",
         "alt": "Sing With Me Screenshot",
@@ -94,7 +91,7 @@
       "date": "2023-01",
       "title": "Trip Monitoring Dashboard",
       "description": "Developed a full-stack trip monitoring dashboard for a mining company as part of a 6-person team during a QDS hackathon. Analyzed big data and presented conclusions and predictions in an easy-to-use web interface. Implemented a REST API using Flask and Python and utilized Google Maps API to create a heatmap of truck locations. A data-driven solution for real-time trip monitoring.",
-      "tags": ["Full-Stack Development", "REST API", "React", "Flask", "Google Maps API", "Data Analysis", "Team Project"],
+      "tags": ["React", "Flask", "Python", "REST API", "Google Maps API", "Data Analysis"],
       "image": {
         "src": "../../images/tripmonitor.png",
         "alt": "Trip Monitoring Dashboard Screenshot",
@@ -118,11 +115,7 @@
         "Android",
         "MVVM",
         "Firebase",
-        "Firestore",
-        "Navigation Component",
-        "Fragments",
-        "Game Development",
-        "Team Project"
+        "Game Development"
       ],
       "image": {
         "src": "../../images/sky-surfer-demo.gif",
@@ -142,7 +135,7 @@
       "date": "2023-02",
       "title": "CogniEasy",
       "description": "CogniEasy is a lightweight GPT-powered tool that turns your resume and a job description into a polished, tailored cover letter. Built by a two-person team, it streamlines the application process with a clean, fast workflow.",
-      "tags": ["Docker", "Python", "JavaScript", "HTML", "CSS", "React", "Yarn"],
+      "tags": ["React", "Python", "OpenAI", "Docker"],
       "image": {
         "src": "../../images/cogni-easy.png",
         "alt": "CogniEasy Screenshot",
@@ -165,7 +158,7 @@
       "date": "2023-08",
       "title": "Inventory Manager",
       "description": "This was my first real-world contract work. A friend of mine was starting up his car dealership; he had a neatly designed website built with GoDaddy's website builder, but was missing an inventory feature. I recruited my friend and classmate and we created the inventory manager using React and Firebase in a couple of months. It nicely fit the theme of the business's website, and I embedded it using an iframe. The business stopped using it as they no longer needed the inventory feature, but the whole thing is still functional, complete with an admin dashboard for adding and editing cars.",
-      "tags": ["React", "Firebase", "Firestore", "CRUD", "Inventory"],
+      "tags": ["React", "JavaScript", "Firebase"],
       "image": {
         "src": "../../images/inventory-manager.png",
         "alt": "Inventory Manager Screenshot",
@@ -188,7 +181,7 @@
       "date": "2022-01",
       "title": "Outliner Discord Bot (nwHacks2022)",
       "description": "Outliner is a Discord bot that answers questions from BCIT course outlines using the OpenAI Answers API. Before ChatGPT and the official release of GPT-3, OpenAI was offering these more basic AI APIs and I couldn't wait to get some hands-on experience with them. So at nwHacks 2022, my team of four and I combined web scraping with a Discord bot server to create an AI chatbot with full knowledge of our course outlines. Of course, we didn't hesitate to ask it about the meaning of life; and it did not disappoint.",
-      "tags": ["Python", "OpenAI API", "Web Scraping", "Team Project"],
+      "tags": ["Python", "OpenAI", "Web Scraping", "Discord Bot"],
       "image": {
         "src": "../../images/outliner.jpg",
         "alt": "Trip Monitoring Dashboard Screenshot",
@@ -207,7 +200,7 @@
       "date": "2021-12",
       "title": "Virtual Learning Buddy",
       "description": "Virtual Learning Buddy (VLB) was my first introduction to web app style projects. I worked in a group of three to create a prototype of what the learning platform of the future would look like, with all the student's needs gathered in one place. We used Bootstrap for the styling, but the whole thing was still a vanilla web stack project. Little did I know this would be the last time I ever touched vanilla instead of frameworks.",
-      "tags": ["HTML", "CSS", "JavaScript", "Bootstrap", "Firebase", "Team Project"],
+      "tags": ["HTML", "CSS", "JavaScript", "Bootstrap", "Firebase"],
       "image": {
         "src": "../../images/vlb.png",
         "alt": "Virtual Learning Buddy Screenshot",
@@ -226,7 +219,7 @@
       "date": "2021-11",
       "title": "Arena of Blood",
       "description": "Arena of Blood was my very first individual project when starting the Computer Systems Technology diploma. I created a text-based RPG adventure game using Python, complete with a full unit test suite for every function and comprehensive Python-style documentation. I remember getting carried away with this one when writing the story. It's definitely still worth a play. Can you find the secret ending without looking at the code?",
-      "tags": ["Python", "Unit Testing", "Documentation", "Text-Based RPG", "Individual Project"],
+      "tags": ["Python", "Unit Testing", "CLI", "Game Development"],
       "image": {
         "src": "../../images/arenaofblood.png",
         "alt": "Arena of Blood Screenshot",

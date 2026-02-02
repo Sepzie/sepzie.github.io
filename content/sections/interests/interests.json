@@ -145,6 +145,22 @@
       }
     },
     {
+      "category": "AI/ML",
+      "label": "OpenAI",
+      "image": {
+        "src": "../../images/openai.png",
+        "alt": "OpenAI"
+      }
+    },
+    {
+      "category": "AI/ML",
+      "label": "PyTorch",
+      "image": {
+        "src": "../../images/pytorch.png",
+        "alt": "PyTorch"
+      }
+    },
+    {
       "category": "Platforms",
       "label": "Android",
       "image": {
@@ -230,6 +246,14 @@
       "image": {
         "src": "../../images/flask.png",
         "alt": "Flask"
+      }
+    },
+    {
+      "category": "Frameworks",
+      "label": "Tailwind",
+      "image": {
+        "src": "../../images/tailwind.png",
+        "alt": "Tailwind CSS"
       }
     },
     {
