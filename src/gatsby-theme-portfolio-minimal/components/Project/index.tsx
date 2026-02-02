@@ -130,9 +130,9 @@ export function Project(props: ProjectProps): React.ReactElement {
                 <div className={classes.Tags}>
                     {props.data.tags &&
                         props.data.tags.length !== 0 &&
-                        props.data.tags.map((tag, key) => {
+                        props.data.tags.map((tag) => {
                             return (
-                                <span key={key}>
+                                <span key={tag}>
                                     <u>{tag}</u>
                                 </span>
                             );
@@ -141,10 +141,10 @@ export function Project(props: ProjectProps): React.ReactElement {
                 <div className={classes.Links}>
                     {props.data.links &&
                         props.data.links.length !== 0 &&
-                        props.data.links.map((link, key) => {
+                        props.data.links.map((link) => {
                             return (
                                 <a
-                                    key={key}
+                                    key={`${link.type}-${link.url}`}
                                     href={link.url}
                                     target="_blank"
                                     rel="noopener noreferrer"

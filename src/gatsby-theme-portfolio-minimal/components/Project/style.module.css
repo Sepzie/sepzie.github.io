@@ -30,7 +30,7 @@
     font-size: 0.875rem;
     line-height: 1rem;
     text-transform: uppercase;
-    letter-spacing: +1px;
+    letter-spacing: 1px;
 }
 
 .Project .Details .Date {
@@ -90,7 +90,7 @@
     box-shadow: 0 0 2.5rem var(--box-shadow-color);
     transition: all 0.3s ease-out;
     overflow: hidden;
-    background-color: #000;
+    background-color: var(--tertiary-color);
 }
 
 .Project .ProjectMediaWrapper:hover {

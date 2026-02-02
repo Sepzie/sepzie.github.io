@@ -72,7 +72,7 @@
       "image": {
         "src": "../../images/singwithme.png",
         "alt": "Sing With Me Screenshot",
-        "linkTo": "sepzie.github.io/sing-with-me-react/"
+        "linkTo": "https://sepzie.github.io/sing-with-me-react/"
       },
       "links": [
         {
@@ -81,7 +81,7 @@
         },
         {
           "type": "external",
-          "url": "sepzie.github.io/sing-with-me-react/"
+          "url": "https://sepzie.github.io/sing-with-me-react/"
         }
       ]
     },
