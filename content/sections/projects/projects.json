@@ -133,6 +133,29 @@
     },
     {
       "visible": true,
+      "category": "CONTRACT PROJECT",
+      "date": "2023-08",
+      "title": "Inventory Manager",
+      "description": "React-based inventory manager with a Firebase backend for tracking items and changes in real time.",
+      "tags": ["React", "Firebase", "Firestore", "CRUD", "Inventory"],
+      "image": {
+        "src": "../../images/react.png",
+        "alt": "Inventory Manager Screenshot",
+        "linkTo": "https://lively-kitten-05fcac.netlify.app/"
+      },
+      "links": [
+        {
+          "type": "external",
+          "url": "https://lively-kitten-05fcac.netlify.app/"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/Sepzie/InventoryManager"
+        }
+      ]
+    },
+    {
+      "visible": true,
       "category": "HACKATHON",
       "date": "2022-01",
       "title": "Outliner Discord Bot",
