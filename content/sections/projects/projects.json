@@ -102,7 +102,37 @@
     },
     {
       "visible": true,
-      "category": "TERM PROJECT",
+      "category": "COURSE PROJECT",
+      "date": "2025-11",
+      "title": "PlayWell",
+      "description": "PlayWell is an Electron app I built with a team of four to solve a real problem gamers face: tracking gaming hours and getting meaningful insights from their playtime. After development, I released it as a standalone executable for friction-free use. To demonstrate my security knowledge, I signed the release files and published the signatures and certificates alongside the binaries.",
+      "tags": [
+        "Electron",
+        "TypeScript",
+        "SQLite",
+        "Prisma",
+        "Desktop App",
+        "Code Signing"
+      ],
+      "image": {
+        "src": "../../images/playwell.png",
+        "alt": "PlayWell App",
+        "linkTo": "https://sepzie.github.io/PlayWell/"
+      },
+      "links": [
+        {
+          "type": "external",
+          "url": "https://sepzie.github.io/PlayWell/"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/Sepzie/PlayWell"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "COURSE PROJECT",
       "date": "2023-11",
       "title": "YOLO Safety Helmet Detection",
       "description": "An object detection system using YOLOv5 to identify safety helmets in images and video streams for workplace safety monitoring. Features model training on custom datasets, real-time detection via webcam, and deployment support for NVIDIA Jetson Nano edge devices.",

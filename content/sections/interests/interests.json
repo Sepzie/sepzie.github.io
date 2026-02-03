@@ -327,6 +327,30 @@
         "src": "../../images/cplusplus.png",
         "alt": "C++"
       }
+    },
+    {
+      "category": "Frameworks",
+      "label": "Electron",
+      "image": {
+        "src": "../../images/electron.png",
+        "alt": "Electron"
+      }
+    },
+    {
+      "category": "Backend",
+      "label": "SQLite",
+      "image": {
+        "src": "../../images/sqlite.png",
+        "alt": "SQLite"
+      }
+    },
+    {
+      "category": "Backend",
+      "label": "Prisma",
+      "image": {
+        "src": "../../images/prisma.png",
+        "alt": "Prisma"
+      }
     }
   ],
   "button": {
