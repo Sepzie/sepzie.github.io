@@ -95,6 +95,46 @@ export function ProjectsSection(props: PageSection): React.ReactElement {
         if (typeof window === 'undefined') {
             return;
         }
+
+        // Handle URL-based filtering (e.g., ?filter=React or ?project=SingWithMe)
+        const applyUrlFilter = () => {
+            const params = new URLSearchParams(window.location.search);
+            const filterParam = params.get('filter');
+            const projectParam = params.get('project');
+
+            if (filterParam) {
+                // Filter by tag
+                const matchingTag = availableTags.find(
+                    (tag) => normalizeTag(tag) === normalizeTag(filterParam),
+                );
+                if (matchingTag) {
+                    setActiveTag(matchingTag);
+                }
+            } else if (projectParam) {
+                // Filter to show only projects with this title (find a unique tag)
+                const project = sortedProjects.find(
+                    (p) => normalizeTag(p.title) === normalizeTag(projectParam),
+                );
+                if (project?.tags?.length) {
+                    // Find a tag that uniquely identifies this project
+                    const uniqueTag = project.tags.find((tag) => {
+                        const tagNorm = normalizeTag(tag);
+                        return sortedProjects.filter((p) =>
+                            p.tags?.some((t) => normalizeTag(t) === tagNorm),
+                        ).length === 1;
+                    });
+                    if (uniqueTag) {
+                        setActiveTag(uniqueTag);
+                    } else {
+                        // Fall back to first tag and scroll to project
+                        setActiveTag(project.tags[0]);
+                    }
+                }
+            }
+        };
+
+        applyUrlFilter();
+
         const handler = (event: Event) => {
             const customEvent = event as CustomEvent<{ skill?: string }>;
             const skill = customEvent.detail?.skill;
@@ -106,7 +146,7 @@ export function ProjectsSection(props: PageSection): React.ReactElement {
         return () => {
             window.removeEventListener('portfolio-skill-filter', handler);
         };
-    }, []);
+    }, [availableTags, sortedProjects]);
 
     function handleFilterClick(tag: string | null) {
         setActiveTag((current) => {
