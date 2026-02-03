@@ -2,8 +2,12 @@
 imageSrc: "../../images/Sepehr_Zohoori_Rad_Portfolio_pic.jpg"
 imageAlt: "PIc"
 ---
-Hi there! I'm a motivated software developer with a strong interest in technology and finding creative solutions to real-world problems. My expertise spans artificial intelligence, full-stack development, and firmware engineering.
+Hi, I’m a software engineer with a strong interest in technology, science, and building creative solutions to real-world problems. My experience spans mobile, embedded, and full-stack development.
 
-I discovered my passion for programming in middle school and have been hooked ever since. After graduating from high school, I explored various fields of study, including engineering and psychology, before deciding to pursue my true calling by enrolling in BCIT's Computer Systems Technology diploma program with a focus on artificial intelligence and machine learning.
+I earned my Computer Systems Technology diploma (AI/ML option) from BCIT in 2023.
 
-I am currently in my final year of the program and anticipate graduation in December 2023. When I'm not coding, I enjoy playing music, staying active, and working on personal projects.
+I spent just under three years at picoTera Electronics, working on mobile and embedded systems, starting as a co-op student and continuing as a full-time engineer after graduation.
+
+I’m currently pursuing a Bachelor of Computing Science with a focus on network security, with an expected graduation in May 2027.
+
+This portfolio showcases a selection of projects I’ve built and iterated on over time, academically, professionally and independently.
